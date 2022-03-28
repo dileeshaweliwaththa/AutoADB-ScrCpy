@@ -53,11 +53,20 @@ So now you have to add this application as a Path variable
 
 ![PathVariableLocation](https://user-images.githubusercontent.com/64683688/160341895-b9fdaad9-a91a-4363-82ca-13120f032944.gif)
 
-Add the root folder location of autoadb to the Path
+Add the Extracted root folder location of autoadb to the Path
 
 ![2 PathVariableAdding](https://user-images.githubusercontent.com/64683688/160344582-fff3ddf2-8f69-40e2-a3b1-2e8166cc5162.gif)
 
 Lets Check whether Auto ADB is Working Succesfully
 
+```
+autoadb scrcpy -s {}
+```
+If it's Working Correctly You are Done!
 
+Proceed from Here For Bonus Steps
+
+If you want this to run as a Background Process when Logged into the Windows
+
+## Step 4
 
