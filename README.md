@@ -1,15 +1,24 @@
 # AutoADB-ScrCpy
-ScrCpy Setting Up Documentation of AutoADB for Windows 
+Auto ADB Setting Up Documentation for ScrCpy 
+
 
 ## How to Setup AutoADB for Windows
 
-SCRCPY
+Tools Needed 
+1. ScrCpy
+
+[direct-win64]: https://github.com/Genymobile/scrcpy/releases/download/v1.23/scrcpy-win64-v1.23.zip
+
+	- Windows: [Click to Download][direct-win64]
+	
+2. Auto ADB
+3. RUST
 
 <details>
 	<summary> <h2> Step 1 </h2> </summary>
 <p align="center">
 
- Step 1
+Step 1
   
 First Download Rust for your Windows
 
@@ -26,6 +35,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
                      
 ----
 
+<details>
+	<summary> <h2> Step 1 </h2> </summary>
+<p align="center">
+	
 Step 2
 
 Download the Repo
@@ -67,6 +80,51 @@ If it's Working Correctly You are Done!
 Proceed from Here For Bonus Steps
 
 If you want this to run as a Background Process when Logged into the Windows
+	1. Create a Bat File
+	2. Create a VBS Script
 
 ## Step 4
+
+First You Have to Create a Batch File
+
+For that Open the NotePad and Type this Code
+
+```
+@echo off
+autoadb.exe scrcpy.exe -s {}
+```
+
+Save this as a .bat file. 
+Here I'm Saving it as auto.bat
+
+Run this and check whether the Batch file we created is working Fine.
+
+If you willing to run the Batch file when the windows Startup Simply put the Batch file into the “All Users” Startup folder
+
+To access the “All Users” Startup folder in Windows 10/11, 
+open the Run dialog box (Windows Key + R), 
+then type 
+
+```
+shell:common startup 
+```
+
+and click OK. 
+When Folder Opens Drag and Drop the Batch File
+
+
+So always opening a CMD is really Annoying So that I thought It's Better to Run this as a Hidden Background Service (to Hide and Run this)
+## Step 5
+
+Then you have to Make the VBS Script File
+
+For that Open the NotePad and Type this Code
+```
+Set WshShell = CreateObject("WScript.Shell") 
+WshShell.Run chr(34) & "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\auto.bat" & Chr(34), 0
+Set WshShell = Nothing
+```
+
+
+
 
