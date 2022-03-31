@@ -53,6 +53,13 @@ Download and Install Rust, According to your Computer Architecture 32 or 64bit.
 or else If you're willing to install this on the Winsows Subsystem for Linux (WSL)  you can Use this Code 
 	
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	
+Next we have to make sure RUST is installed correctly for that, open a shell and enter this line:
+	
+	$ rustc --version
+	
+![rustc](https://user-images.githubusercontent.com/64683688/160978976-a51934b2-55ba-4d47-ad5b-59be501d79c5.gif)
+
                      
 </p>
 </details>
@@ -74,7 +81,10 @@ https://github.com/rom1v/autoadb
 Extract the File to a Proper Location
 	
 Here I'm Extracting the file to 
+	
 	C:\
+	
+Now upto part 2 is done completely
                      
 </p>
 </details>
