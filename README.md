@@ -2,7 +2,6 @@
 
 Auto ADB for ScrCpy Setting Up Documentation for Windows
 
-
 As an Android Developer ScrCpy is Very Usefull Application. I have been using scrcpy for a long time to test the applications in real devices and scrcpy let you do it without holding the device on your hand to control it.
 
 It was built by Romain Vimont
